@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Transaction Failure Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>UPI Transaction Prediction</h1>
+            <p>Predict and avoid UPI transaction failures</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="transaction-form">
+            <h2>Enter Your Transaction Details</h2>
+            <form id="transaction-form">
+                <label for="amount">Amount (INR):</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="network">Network Status:</label>
+                <select id="network" name="network" required>
+                    <option value="strong">Strong</option>
+                    <option value="weak">Weak</option>
+                    <option value="none">None</option>
+                </select>
+
+                <label for="time">Time of Transaction:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Check Prediction</button>
+            </form>
+        </section>
+
+        <section class="prediction-result">
+            <h2>Transaction Prediction Status</h2>
+            <div id="prediction-status" class="prediction-status">
+                <p>Enter transaction details to see the prediction.</p>
+            </div>
+        </section>
+
+        <section class="alert-notifications">
+            <h2>Alerts</h2>
+            <div id="alert-box" class="alert-box">
+                <p>No alerts yet.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
