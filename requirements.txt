@@ -1,0 +1,22 @@
+1)Firstly install the required Python libraries by running the following commands in your terminal.
+       -use command 
+            pip install flask  flask-cors
+ -the flask-cors helps the backend to the frontend'.
+
+
+
+2)RUN the flask program with the command - 
+                                           python app.py
+
+3)Compile the java code with the command -
+                                           javac Predictions.java
+4)Once compiled ,then run the program-
+                                       syntax-> java PredictTransaction <amount> <network_status>
+
+5)Then simply open the html file and manually type the required values for the transaction
+After running the app, a transactions.db file should appear in your project directory.
+You can check the database contents by using a SQLite browser or the SQLite command-line tool.
+If you're using the command-line tool:-  sqlite3 transactions.db
+
+6)To view record of all the transactions done till the current time use the command
+                                                        -SELECT * FROM transactions;
